@@ -1,0 +1,258 @@
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="format-detection" content="telephone=no">
+<title>阅读样式预览 · 全源 AI 羊毛与芯片·Agent干货早报｜11.11周三 精选 5毛+4干货</title>
+<meta name="description" content="汇聚 FreeTokens、9大AI公众号、SemiEngineering/OpenAI直连RSS与X：5条可领额度(估¥52)+4条硬核实战。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="全源 AI 羊毛与芯片·Agent干货早报｜11.11周三 精选 5毛+4干货">
+<meta property="og:description" content="汇聚 FreeTokens、9大AI公众号、SemiEngineering/OpenAI直连RSS与X：5条可领额度(估¥52)+4条硬核实战。">
+<meta property="og:image" content="https://sunzxingood.github.io/brief-pages/p/1111_4b6d7206139a_thumb.png">
+<meta itemprop="image" content="https://sunzxingood.github.io/brief-pages/p/1111_4b6d7206139a_thumb.png">
+<link rel="icon" type="image/png" href="https://sunzxingood.github.io/brief-pages/p/1111_4b6d7206139a_thumb.png">
+<link rel="apple-touch-icon" content="https://sunzxingood.github.io/brief-pages/p/1111_4b6d7206139a_thumb.png">
+</head>
+<style>
+
+:root{
+  --canvas:#070707; --surface:#121212; --surface-2:#161616;
+  --ink:#F8F8F8; --body:#E2E2E2; --muted:#9AA0A6;
+  --pill-bg:#0C1322; --pill-ink:#94A3C4; --line:#232323;
+  --accent:#E2E2E2;
+  --sans-cn:"MiSans","Noto Sans SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --sans-en:Inter,"Google Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --mono:"Roboto Mono","JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+}
+html:has(#bf-light:checked){
+  --canvas:#F5F6F8; --surface:#FFFFFF; --surface-2:#F0F2F5;
+  --ink:#14181F; --body:#2A3038; --muted:#5C6470;
+  --pill-bg:#EEF2F9; --pill-ink:#3C4A63; --line:#DFE3E8;
+  --accent:#14181F;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+html{background:var(--canvas);-webkit-text-size-adjust:100%;}
+body{
+  background:var(--canvas); color:var(--body);
+  font-family:var(--sans-cn);
+  font-size:17px; line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+.bf-root{display:block;}
+.bf-wrap{max-width:760px;margin:0 auto;padding:14px 14px 28px;}
+.bf-chk,.bf-rad{position:absolute;opacity:0;pointer-events:none;width:0;height:0;}
+
+/* ---------- hero ---------- */
+.bf-hero{border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:16px;}
+.bf-topbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;justify-content:space-between;margin-bottom:12px;}
+.bf-topbar-left{display:flex;flex-wrap:wrap;align-items:center;gap:8px;}
+.bf-badge{
+  font-family:var(--sans-en);font-size:11.5px;letter-spacing:.08em;
+  color:var(--pill-ink);background:var(--pill-bg);border:1px solid var(--line);
+  border-radius:4px;padding:4px 8px;
+}
+.bf-preview-label{
+  font-family:var(--sans-cn);font-size:11.5px;font-weight:700;letter-spacing:.06em;
+  color:var(--pill-ink);background:var(--pill-bg);border:1px solid var(--line);
+  border-radius:4px;padding:4px 8px;
+}
+.bf-ctrls{display:flex;gap:6px;}
+.bf-ctl-btn{
+  font-family:var(--sans-cn);font-size:12px;font-weight:600;color:var(--pill-ink);
+  background:var(--pill-bg);border:1px solid var(--line);border-radius:4px;
+  padding:4px 9px;cursor:pointer;user-select:none;
+}
+.bf-ctl-btn:active{opacity:.7;}
+.bf-title{
+  font-family:var(--sans-cn);font-size:25px;line-height:1.35;font-weight:800;
+  color:var(--ink);margin:0 0 8px;letter-spacing:-.01em;
+}
+.bf-lead{font-size:14.5px;color:var(--muted);margin:0 0 14px;line-height:1.65;}
+.bf-tabs{display:flex;flex-wrap:wrap;gap:8px;}
+.bf-tab-lbl{
+  font-size:13px;font-weight:600;color:var(--body);background:var(--surface);
+  border:1px solid var(--line);border-radius:4px;padding:6px 10px;cursor:pointer;user-select:none;
+}
+#bf-tab-all:checked ~ .bf-wrap #bf-lbl-all,
+#bf-tab-ai_perks:checked ~ .bf-wrap #bf-lbl-ai_perks,
+#bf-tab-ai_insights:checked ~ .bf-wrap #bf-lbl-ai_insights{
+  background:var(--pill-bg);color:var(--pill-ink);border-color:var(--pill-ink);
+}
+#bf-tab-ai_perks:checked ~ .bf-wrap #bf-sec-ai_insights{display:none;}
+#bf-tab-ai_insights:checked ~ .bf-wrap #bf-sec-ai_perks{display:none;}
+
+/* ---------- KPI ---------- */
+.bf-kpi{margin:0 0 20px;}
+.kpi-card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px;}
+.kpi-line{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px;}
+.kpi-line-tight{margin-bottom:4px;}
+.kpi-label{font-size:14px;font-weight:700;color:var(--ink);}
+.kpi-label2{font-size:13.5px;font-weight:700;color:var(--ink);}
+.kpi-fig{font-family:var(--sans-en);font-size:14.5px;font-weight:800;color:var(--ink);}
+.kpi-note{font-size:12.5px;color:var(--muted);margin-bottom:8px;}
+.kpi-note2{font-size:12.5px;font-weight:600;color:var(--muted);}
+.kpi-bar{width:100%;height:6px;background:var(--line);border-radius:99px;overflow:hidden;margin-bottom:10px;}
+.kpi-bar-month{margin-bottom:0;height:5px;}
+.kpi-fill{width:2%;height:100%;border-radius:99px;background:var(--pill-ink);}
+
+/* ---------- sections ---------- */
+.bf-sec{
+  background:var(--surface);border:1px solid var(--line);border-radius:6px;
+  margin:0 0 20px;overflow:hidden;
+}
+.bf-sec-hdr{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;
+  padding:12px 14px;border-bottom:1px solid var(--line);
+  border-left:3px solid var(--sbar,#94A3C4);
+}
+.bf-sec-idx{
+  font-family:var(--sans-en);font-size:12px;font-weight:800;color:var(--pill-ink);
+  background:var(--pill-bg);border-radius:4px;padding:3px 7px;letter-spacing:.06em;
+}
+.bf-sec-t{font-size:16px;font-weight:800;color:var(--ink);flex:1 1 200px;line-height:1.45;}
+.bf-sec-meta{font-family:var(--sans-en);font-size:12px;color:var(--muted);}
+.bf-sec-body{padding:6px 14px 14px;}
+.bf-col-hdr{display:none;}
+
+/* ---------- rows ---------- */
+.bf-row{
+  padding:16px 0;border-bottom:1px solid var(--line);border-radius:4px;
+}
+.bf-row:last-child{border-bottom:none;}
+.bf-kicker{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:8px;}
+.bf-num{
+  font-family:var(--sans-en);font-size:12px;font-weight:700;color:var(--pill-ink);
+  background:var(--pill-bg);border-radius:4px;padding:2px 6px;
+}
+.bf-tag{
+  font-size:12px;font-weight:600;color:var(--pill-ink);background:var(--pill-bg);
+  border-radius:4px;padding:2px 6px;
+}
+.bf-subj{
+  font-family:var(--sans-cn);font-size:19px;line-height:1.5;font-weight:800;
+  color:var(--ink);margin:0 0 8px;letter-spacing:-.005em;
+}
+.bf-evid{
+  font-size:14.5px;line-height:1.7;color:var(--muted);margin:0 0 10px;
+  overflow-wrap:anywhere;
+}
+.bf-conc{
+  font-size:17px;line-height:1.78;color:var(--body);margin:0 0 12px;overflow-wrap:anywhere;
+}
+.kp-mech{
+  font-size:12px;font-weight:700;color:var(--pill-ink);background:var(--pill-bg);
+  border-radius:4px;padding:2px 6px;margin-right:6px;white-space:nowrap;
+}
+.kp-evid,.kp-bound{
+  font-family:var(--sans-cn);font-size:13px;font-weight:700;color:var(--pill-ink);
+  background:var(--pill-bg);border-radius:4px;padding:2px 6px;
+}
+.bf-chips{display:flex;flex-wrap:wrap;gap:6px;}
+.bf-chip{
+  font-size:12px;font-weight:600;color:var(--pill-ink);background:var(--pill-bg);
+  border-radius:4px;padding:3px 7px;
+}
+.bf-acts{margin-top:12px;}
+.bf-copy{border:0;margin:0;}
+.bf-btn{
+  display:inline-block;font-size:13px;font-weight:600;color:var(--pill-ink);
+  background:var(--pill-bg);border:1px solid var(--line);border-radius:4px;
+  padding:7px 11px;cursor:pointer;list-style:none;user-select:none;
+}
+.bf-btn::-webkit-details-marker{display:none;}
+.bf-copy-box{
+  margin-top:8px;font-family:var(--mono);font-size:13px;line-height:1.7;
+  color:var(--pill-ink);background:var(--pill-bg);border:1px solid var(--line);
+  border-radius:4px;padding:9px 11px;overflow-wrap:anywhere;word-break:break-word;
+}
+.src-link{color:var(--pill-ink);text-decoration:none;border-bottom:1px solid rgba(148,163,196,.45);overflow-wrap:anywhere;word-break:break-word;}
+.src-link:hover{border-bottom-color:var(--pill-ink);}
+
+/* ---------- drawer ---------- */
+.bf-drawer{
+  background:var(--surface);border:1px solid var(--line);border-radius:6px;
+  padding:12px 14px;margin:0 0 18px;
+}
+.bf-drawer>summary{
+  font-size:14.5px;font-weight:700;color:var(--ink);cursor:pointer;list-style:none;user-select:none;
+}
+.bf-drawer>summary::-webkit-details-marker{display:none;}
+.bf-drawer[open]>summary{margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--line);}
+.bf-drawer-body{font-size:15px;line-height:1.75;color:var(--body);}
+.bf-drawer-body p{margin:0 0 10px;}
+.bf-drawer-body ul{margin:0;padding-left:20px;}
+.bf-drawer-body li{margin-bottom:8px;overflow-wrap:anywhere;}
+.bf-u-copy{font-family:var(--mono);font-size:13px;}
+
+/* ---------- footer ---------- */
+.bf-foot{
+  font-size:13px;line-height:1.7;color:var(--muted);text-align:center;
+  border-top:1px solid var(--line);padding:16px 6px 8px;
+}
+
+/* ---------- desktop ---------- */
+@media (min-width:900px){
+  .bf-wrap{max-width:1040px;padding:26px 24px 40px;}
+  .bf-title{font-size:32px;}
+  .bf-subj{font-size:20px;}
+  .bf-col-hdr{
+    display:grid;grid-template-columns:48fr 52fr;gap:16px;
+    font-size:12px;color:var(--muted);padding:12px 0 4px;border-bottom:1px solid var(--line);
+  }
+  .bf-row{display:grid;grid-template-columns:48fr 52fr;gap:16px;}
+  .bf-sec-body{padding:8px 18px 18px;}
+}
+
+/* ---------- optional larger text ---------- */
+html:has(#bf-lg:checked) body{font-size:19px;}
+html:has(#bf-lg:checked) .bf-conc{font-size:19px;}
+html:has(#bf-lg:checked) .bf-subj{font-size:21px;}
+
+</style>
+</head>
+<body>
+<div class="bf-root"><input class="bf-chk" type="checkbox" id="bf-lg"><input class="bf-chk" type="checkbox" id="bf-light"><input class="bf-rad" type="radio" name="bf-tab" id="bf-tab-all" checked><input class="bf-rad" type="radio" name="bf-tab" id="bf-tab-ai_perks"><input class="bf-rad" type="radio" name="bf-tab" id="bf-tab-ai_insights"><div class="bf-wrap"><div class="bf-hero"><div class="bf-topbar"><div class="bf-topbar-left"><span class="bf-badge">AI WOOL &amp; SEMI/AGENT BRIEF · 私享早报</span>
+<span class="bf-preview-label">阅读样式预览 · 采用今日08:00存档，优惠资格未在此复核</span></div><div class="bf-ctrls"><label class="bf-ctl-btn bf-light-lbl" for="bf-light">浅色模式</label><label class="bf-ctl-btn bf-lg-lbl" for="bf-lg">大字号</label></div></div><h1 class="bf-title">11月11日 周三 · 全源 AI 羊毛与干货早报</h1><p class="bf-lead">模块隔离：01 免费Token与额度福利 · 02 芯片/EDA/Agent硬核干货（卡片内一键直达）</p><div class="bf-tabs"><label class="bf-tab-lbl" for="bf-tab-all" id="bf-lbl-all">全部模块</label><label class="bf-tab-lbl" for="bf-tab-ai_perks" id="bf-lbl-ai_perks">01 AI免费额度</label><label class="bf-tab-lbl" for="bf-tab-ai_insights" id="bf-lbl-ai_insights">02 硬核实战</label></div></div><div class="bf-kpi">
+    <div class="section kpi-card">
+      <div class="kpi-line">
+        <span class="kpi-label">🎯 日已确认实值 （30%红线 ¥30）</span>
+        <span class="kpi-fig">¥0.0 / ¥100 · 估值 ¥20.4（不计入） · 未兑现估值 ¥52</span>
+      </div>
+      <div class="kpi-bar kpi-bar-day">
+        <div class="kpi-fill kpi-fill-day"></div>
+      </div>
+      <div class="kpi-note">现金 ¥0.0 ｜ 已实现节省 ¥0.0 ｜ 未核实估值 ¥20.4（不计入）</div>
+      <div class="kpi-line kpi-line-tight">
+        <span class="kpi-label2">📅 月进度 ¥0.0 / ¥10000 (0% · 独立月目标)</span>
+        <span class="kpi-note2">缺口 ¥10000 · 剩19天日均需 ¥526</span>
+      </div>
+      <div class="kpi-bar kpi-bar-month">
+        <div class="kpi-fill kpi-fill-month"></div>
+      </div>
+    </div>
+    </div><section class="bf-sec" id="bf-sec-ai_perks" style="--sbar:#1548B9;"><div class="bf-sec-hdr"><span class="bf-sec-idx">01</span><span class="bf-sec-t">🪙 AI 免费 Token · 额度重置与福利严选</span><span class="bf-sec-meta">5 条 · 估 ¥52</span></div><div class="bf-sec-body"><div class="bf-col-hdr"><span>标的 · 渠道与量化证据 (48%)</span><span>主结论 · 边界条件与直听动作 (52%)</span></div><div class="bf-row" tabindex="0"><div class="bf-left"><div class="bf-kicker"><span class="bf-num">01.1</span><span class="bf-tag">额度重置 · 估¥35</span></div><h3 class="bf-subj">Claude付费用户获全模型额度重置</h3><p class="bf-evid">信源：AIHOT·X：Claude Devs (@Cl</p><div class="bf-chips"><span class="bf-chip bf-chip-s">可薅估 ¥35</span></div></div><div class="bf-right"><p class="bf-conc"><span class="kp-mech">要点</span>：Pro、Max、Ultra、Team用户查设置页；美西时间12月10日14时前使用</p><div class="bf-acts"><details class="bf-copy"><summary class="bf-btn">🔗 点开复制原文网址</summary><div class="bf-copy-box"><a class="src-link" href="https://x.com/ClaudeDevs/status/2120275296637321476" rel="noopener noreferrer" target="_blank">https://x.com/ClaudeDevs/status/2120275296637321476</a></div></details></div></div></div><div class="bf-row" tabindex="0"><div class="bf-left"><div class="bf-kicker"><span class="bf-num">01.2</span><span class="bf-tag">API羊毛 · 估¥17</span></div><h3 class="bf-subj">LiveKit每月赠送2.5美元推理额度</h3><p class="bf-evid">信源：FreeTokens·LiveKit</p><div class="bf-chips"><span class="bf-chip">可薅估 ¥17</span></div></div><div class="bf-right"><p class="bf-conc"><span class="kp-mech">要点</span>：通过LiveKit Inference SDK接入；免费额度耗尽即停，不自动扣费</p><div class="bf-acts"><details class="bf-copy"><summary class="bf-btn">🔗 点开复制原文网址</summary><div class="bf-copy-box"><a class="src-link" href="https://livekit.com/pricing" rel="noopener noreferrer" target="_blank">https://livekit.com/pricing</a></div></details></div></div></div><div class="bf-row" tabindex="0"><div class="bf-left"><div class="bf-kicker"><span class="bf-num">01.3</span><span class="bf-tag">限免工具</span></div><h3 class="bf-subj">StepAudio 3四款预览模型限免</h3><p class="bf-evid">信源：FreeTokens·阶跃星辰</p></div><div class="bf-right"><p class="bf-conc"><span class="kp-mech">要点</span>：实名后调用Realtime、Chat、Gen、Music；11月17日11:59截止</p><div class="bf-acts"><details class="bf-copy"><summary class="bf-btn">🔗 点开复制原文网址</summary><div class="bf-copy-box"><a class="src-link" href="https://platform.stepfun.com/docs/zh/guides/pricing/details" rel="noopener noreferrer" target="_blank">https://platform.stepfun.com/docs/zh/guides/pricing/details</a></div></details></div></div></div><div class="bf-row" tabindex="0"><div class="bf-left"><div class="bf-kicker"><span class="bf-num">01.4</span><span class="bf-tag">免费Token</span></div><h3 class="bf-subj">硅基流动多类模型API长期免费</h3><p class="bf-evid">信源：FreeTokens·硅基流动</p></div><div class="bf-right"><p class="bf-conc"><span class="kp-mech">要点</span>：实名认证后调用免费OCR、语音、向量及生图模型；注意限速</p><div class="bf-acts"><details class="bf-copy"><summary class="bf-btn">🔗 点开复制原文网址</summary><div class="bf-copy-box"><a class="src-link" href="https://www.siliconflow.cn/pricing" rel="noopener noreferrer" target="_blank">https://www.siliconflow.cn/pricing</a></div></details></div></div></div><div class="bf-row" tabindex="0"><div class="bf-left"><div class="bf-kicker"><span class="bf-num">01.5</span><span class="bf-tag">限免工具</span></div><h3 class="bf-subj">Higgsfield MCP开放<span class='kp-evid'>72小时</span>免费试用</h3><p class="bf-evid">信源：AIHOT·X：Higgsfield AI (@</p></div><div class="bf-right"><p class="bf-conc"><span class="kp-mech">要点</span>：零元开通并立即取消自动续订；试用涵盖视频、图像和音频模型</p><div class="bf-acts"><details class="bf-copy"><summary class="bf-btn">🔗 点开复制原文网址</summary><div class="bf-copy-box"><a class="src-link" href="https://x.com/higgsfield/status/2120160293678641600" rel="noopener noreferrer" target="_blank">https://x.com/higgsfield/status/2120160293678641600</a></div></details></div></div></div></div></section><section class="bf-sec" id="bf-sec-ai_insights" style="--sbar:#005F59;"><div class="bf-sec-hdr"><span class="bf-sec-idx">02</span><span class="bf-sec-t">🧠 芯片·EDA·大模型与 Agent 硬核干货</span><span class="bf-sec-meta">4 条跨源精选</span></div><div class="bf-sec-body"><div class="bf-col-hdr"><span>标的 · 渠道与量化证据 (48%)</span><span>主结论 · 边界条件与直听动作 (52%)</span></div><div class="bf-row" tabindex="0"><div class="bf-left"><div class="bf-kicker"><span class="bf-num">02.1</span><span class="bf-tag">模型实测</span></div><h3 class="bf-subj">Gemini 4 Carbon全面开放开发者</h3><p class="bf-evid">信源：AIHOT·Google DeepMind：Bl</p></div><div class="bf-right"><p class="bf-conc"><span class="kp-mech">要点</span>：Carbon主攻复杂知识与长程代理任务，适合评估其相对Argon的模型分工</p><div class="bf-acts"><details class="bf-copy"><summary class="bf-btn">🔗 点开复制原文网址</summary><div class="bf-copy-box"><a class="src-link" href="https://deepmind.google/blog/gemini-4-carbon-is-now-available/" rel="noopener noreferrer" target="_blank">https://deepmind.google/blog/gemini-4-carbon-is-now-available/</a></div></details></div></div></div><div class="bf-row" tabindex="0"><div class="bf-left"><div class="bf-kicker"><span class="bf-num">02.2</span><span class="bf-tag">Agent实战</span></div><h3 class="bf-subj">三种方案约束任意模型结构化输出</h3><p class="bf-evid">信源：AIHOT·OpenRouter：Announc</p></div><div class="bf-right"><p class="bf-conc"><span class="kp-mech">要点</span>：结构化输出不应只靠提示词；Schema约束与工具强制调用更可靠</p><div class="bf-acts"><details class="bf-copy"><summary class="bf-btn">🔗 点开复制原文网址</summary><div class="bf-copy-box"><a class="src-link" href="https://openrouter.ai/blog/tutorials/structured-output-llm/" rel="noopener noreferrer" target="_blank">https://openrouter.ai/blog/tutorials/structured-output-llm/</a></div></details></div></div></div><div class="bf-row" tabindex="0"><div class="bf-left"><div class="bf-kicker"><span class="bf-num">02.3</span><span class="bf-tag">模型实测</span></div><h3 class="bf-subj">十五款视觉模型OCR实测与选型</h3><p class="bf-evid">信源：AIHOT·OpenRouter：Announc</p></div><div class="bf-right"><p class="bf-conc"><span class="kp-mech">要点</span>：OCR选型需同时看字段准确率与成本，<span class='kp-bound'>关闭推理并交叉校验可</span>提稳</p><div class="bf-acts"><details class="bf-copy"><summary class="bf-btn">🔗 点开复制原文网址</summary><div class="bf-copy-box"><a class="src-link" href="https://openrouter.ai/blog/insights/best-ocr-model/" rel="noopener noreferrer" target="_blank">https://openrouter.ai/blog/insights/best-ocr-model/</a></div></details></div></div></div><div class="bf-row" tabindex="0"><div class="bf-left"><div class="bf-kicker"><span class="bf-num">02.4</span><span class="bf-tag">算力芯片</span></div><h3 class="bf-subj">AMD EPYC 9006与Zen 6平台实测</h3><p class="bf-evid">信源：ServeTheHome</p></div><div class="bf-right"><p class="bf-conc"><span class="kp-mech">要点</span>：EPYC竞争焦点转向核心架构与整机平台，需结合实际工作负载评估</p><div class="bf-acts"><details class="bf-copy"><summary class="bf-btn">🔗 点开复制原文网址</summary><div class="bf-copy-box"><a class="src-link" href="https://www.servethehome.com/amd-epyc-9006-results-are-here-and-amd-delivers-a-knockout-part-deux/" rel="noopener noreferrer" target="_blank">https://www.servethehome.com/amd-epyc-9006-results-are-here-and-amd-delivers-a-knockout-part-deux/</a></div></details></div></div></div></div></section><details class="bf-drawer"><summary>展开核查记录 · 原始信源网址与口径说明</summary><div class="bf-drawer-body"><p><b>核查口径</b>：所有要点均严格基于原始节目与展讯提炼；微信屏蔽外链直跳的域名已自动转为『微信内直听』或『点开长按复制原链』，确保零死链。</p><ul><li><span class="bf-num">[01.1]</span> Claude付费用户获全模型额度重置 — <span class="bf-u-copy"><a class="src-link" href="https://x.com/ClaudeDevs/status/2120275296637321476" rel="noopener noreferrer" target="_blank">https://x.com/ClaudeDevs/status/2120275296637321476</a></span></li><li><span class="bf-num">[01.2]</span> LiveKit每月赠送2.5美元推理额度 — <span class="bf-u-copy"><a class="src-link" href="https://livekit.com/pricing" rel="noopener noreferrer" target="_blank">https://livekit.com/pricing</a></span></li><li><span class="bf-num">[01.3]</span> StepAudio 3四款预览模型限免 — <span class="bf-u-copy"><a class="src-link" href="https://platform.stepfun.com/docs/zh/guides/pricing/details" rel="noopener noreferrer" target="_blank">https://platform.stepfun.com/docs/zh/guides/pricing/details</a></span></li><li><span class="bf-num">[01.4]</span> 硅基流动多类模型API长期免费 — <span class="bf-u-copy"><a class="src-link" href="https://www.siliconflow.cn/pricing" rel="noopener noreferrer" target="_blank">https://www.siliconflow.cn/pricing</a></span></li><li><span class="bf-num">[01.5]</span> Higgsfield MCP开放72小时免费试用 — <span class="bf-u-copy"><a class="src-link" href="https://x.com/higgsfield/status/2120160293678641600" rel="noopener noreferrer" target="_blank">https://x.com/higgsfield/status/2120160293678641600</a></span></li><li><span class="bf-num">[02.1]</span> Gemini 4 Carbon全面开放开发者 — <span class="bf-u-copy"><a class="src-link" href="https://deepmind.google/blog/gemini-4-carbon-is-now-available/" rel="noopener noreferrer" target="_blank">https://deepmind.google/blog/gemini-4-carbon-is-now-available/</a></span></li><li><span class="bf-num">[02.2]</span> 三种方案约束任意模型结构化输出 — <span class="bf-u-copy"><a class="src-link" href="https://openrouter.ai/blog/tutorials/structured-output-llm/" rel="noopener noreferrer" target="_blank">https://openrouter.ai/blog/tutorials/structured-output-llm/</a></span></li><li><span class="bf-num">[02.3]</span> 十五款视觉模型OCR实测与选型 — <span class="bf-u-copy"><a class="src-link" href="https://openrouter.ai/blog/insights/best-ocr-model/" rel="noopener noreferrer" target="_blank">https://openrouter.ai/blog/insights/best-ocr-model/</a></span></li><li><span class="bf-num">[02.4]</span> AMD EPYC 9006与Zen 6平台实测 — <span class="bf-u-copy"><a class="src-link" href="https://www.servethehome.com/amd-epyc-9006-results-are-here-and-amd-delivers-a-knockout-part-deux/" rel="noopener noreferrer" target="_blank">https://www.servethehome.com/amd-epyc-9006-results-are-here-and-amd-delivers-a-knockout-part-deux/</a></span></li></ul></div></details><div class="bf-foot">每日 08:00 / 18:30 私发中先生 · 额度与代金券不计收入，实值只记已确认现金及已兑现节省 · 2026-11-11 08:00 CST</div></div></div>
+<script>
+document.addEventListener('click',function(e){
+  if(e.target.closest('a,label,summary,input,audio'))return;
+  var r=e.target.closest('.bf-row');
+  if(!r)return;
+  var cur=r.getAttribute('data-pinned')==='true';
+  document.querySelectorAll('.bf-row[data-pinned="true"]').forEach(function(x){x.removeAttribute('data-pinned');});
+  if(!cur)r.setAttribute('data-pinned','true');
+});
+document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){document.querySelectorAll('.bf-row[data-pinned="true"]').forEach(function(x){x.removeAttribute('data-pinned');});}
+  if(e.key==='Enter'||e.key===' '){
+    var r=document.activeElement&&document.activeElement.closest('.bf-row');
+    if(r&&!document.activeElement.closest('a,summary,audio')){
+      e.preventDefault();
+      var cur=r.getAttribute('data-pinned')==='true';
+      r.setAttribute('data-pinned',cur?'false':'true');
+    }
+  }
+});
+</script>
+</body>
+</html>
